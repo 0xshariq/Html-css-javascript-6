@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+.links{
+  list-style-decoration: none;
+  font-weight: 900;
+}
 .header{
   width: 100vw;
   height: auto; 
