@@ -1,4 +1,5 @@
 run = "git init"
+modules = ["web"]
 [nix]
 channel = "stable-23_11"
 
