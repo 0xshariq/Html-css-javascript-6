@@ -11,16 +11,23 @@
 .navbar{
   width: 100vw;
   height: auto; 
+  background-color: #0D1B2A;
 }
 
 .navbar h1{
   font-weight: bold;
   font-size: 1.5rem;
 }
-
+.navbar ul li:hover{
+  font-weight: bold;
+  font-size: 1.75rem;
+  border: 2px solid white;
+  background-color: #1B263B;
+}
 .footer{
   width: 100vw;
   height: auto;
+  background-color: #0D1B2A
 }
 
 
@@ -29,6 +36,7 @@
   height: auto;
   font-size: 1rem;
   transition: all 2s ease-in-out 5ms;
+  background-color: #415A77;
 }
 .main:hover{
   font-size: 1.75rem;
@@ -103,4 +111,11 @@
   display: block;
   margin: auto;
   margin-top: 1rem;
+}
+.submit-btn:hover{
+  background-color: rgb(44,55,60);
+  
+}
+.submit-btn:active{
+  border: 2px solid white;
 }
