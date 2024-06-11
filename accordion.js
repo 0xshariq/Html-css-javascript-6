@@ -1,18 +1,17 @@
 const accordionItems = document.querySelectorAll(".accordion-item");
 
 accordionItems.forEach(item => {
-  const title = item.querySelector(".accordion-title");
+  const accordionTitle = item.querySelector(".accordion-title");
   const content = item.querySelector(".accordion-content");
 
-  title.addEventListener("click", () => {
-    for (i = 0; i < accordionItems.length; i++) {
-      if(accordionItems[i] != item){
-        accordionItems[i].classList.remove("active");
-      }else{
+  accordionTitle.addEventListener("click", () => {
+    for (let accordionItem of accordionItems) {
+      if (accordionItem != item) {
+        accordionItem.classList.remove("active");
+      } else {
         // toggle the accordion item
-        item.classList.toggle("active");
+        content.classList.toggle("active");
       }
     }
-
   });
 });
