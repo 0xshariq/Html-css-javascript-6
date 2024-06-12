@@ -1,9 +1,17 @@
 *{
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  box-sizing: border-box;  
+}
+
+body{
+  background-image: url(bg-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   
 }
+
+/* navbar */
 .links{
   list-style: none;
   font-weight: 900;
@@ -11,7 +19,7 @@
 .navbar{
   width: 100vw;
   height: auto; 
-  background-color: #0D1B2A;
+  background-color: transparent;
 }
 
 .navbar h1{
@@ -24,13 +32,30 @@
   border: 2px solid white;
   background-color: #1B263B;
 }
-.footer{
-  width: 100vw;
-  height: auto;
-  background-color: #0D1B2A
+
+.menu-bar {
+  display: none; /* Hide menu by default */
+  transition: all 2s ease-in-out 1ms;
 }
 
+.menu-btn{
+  display: inline-block;
+}
 
+.menu-bar.active {
+  display: block; /* Show menu when active */
+}
+
+.menu-items {
+  display: none; /* Hide menu items by default */
+}
+
+.menu-items.active {
+  display: inline-block; /* Show menu items when active */
+  border: 2px solid white;
+}
+
+/* main content */
 .main{
   width: 100vw;
   height: auto;
@@ -46,10 +71,18 @@
 .accordion{
   font-family: Arial, Helvetica, sans-serif;
   width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .accordion-item {
   margin-bottom: 10px;
+  width: 20%;
+  height: auto;
+  background-color: grey;
+  border-radius: 5px;
+  
 }
 
 .accordion-title {
@@ -58,6 +91,8 @@
   cursor: pointer;
   padding: 10px;
   transition: background-color 1s;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .accordion-title:hover {
@@ -68,54 +103,18 @@
   background: lightgoldenrodyellow;
   display: none;
   padding: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .accordion-item.active .accordion-content{
       display: block;
 }
 
-/* Help form */
-.section-help {
-  margin: 5rem auto;
-  text-align: center;
-  background: rgb(240, 240, 240);
-  border-radius: 10px;
-  padding: 1rem;
-}
 
-.help-form {
-  max-width: 800px;
-  width: 95%;
-  text-align: left;
-  margin: auto;
-}
-.help-form label {
-  display: block;
-}
-
-.help-form input {
-  display: block;
-  width: 100%;
-  padding: 0.5rem;
-}
-.form-group {
-  margin-top: 1rem;
-}
-.help-form textarea {
-  width: 100%;
-}
-.submit-btn {
-  background-color: rgb(44, 55, 63);
-  color: white;
-  padding: 1rem 2rem;
-  display: block;
-  margin: auto;
-  margin-top: 1rem;
-}
-.submit-btn:hover{
-  background-color: rgb(44,55,60);
-  
-}
-.submit-btn:active{
-  border: 2px solid white;
+/* footer */
+.footer{
+  width: 100vw;
+  height: auto;
+  background-color: #0D1B2A
 }

@@ -20,8 +20,8 @@ accordionItems.forEach(item => {
 // menu button
 const menuBtn = document.querySelector(".menu-btn");
 const menuBar = document.querySelector(".menu");
-const menuItems = item.querySelector(".menu-items");
-menuBtn.addEventListener("click",(e)=>{
+const menuItems = document.querySelector(".menu-items");
+menuBtn.addEventListener("click", (e) => {
   menuBar.classList.toggle("active");
   menuItems.classList.toggle("active");
-})
+});
