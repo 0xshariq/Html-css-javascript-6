@@ -15,6 +15,7 @@ body{
 .links{
   list-style: none;
   font-weight: 900;
+  font-size: 1.2rem;
 }
 .navbar{
   width: 100vw;
@@ -113,8 +114,20 @@ body{
 
 
 /* footer */
-.footer{
+footer{
   width: 100vw;
   height: auto;
-  background-color: #0D1B2A
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+footer div.p1{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+footer div.p2{
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
