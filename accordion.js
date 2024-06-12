@@ -10,8 +10,18 @@ accordionItems.forEach(item => {
         accordionItem.classList.remove("active");
       } else {
         // toggle the accordion item
-        content.classList.toggle("active");
+ content.classList.toggle("active");
       }
     }
   });
 });
+
+
+// menu button
+const menuBtn = document.querySelector(".menu-btn");
+const menuBar = document.querySelector(".menu");
+const menuItems = item.querySelector(".menu-items");
+menuBtn.addEventListener("click",(e)=>{
+  menuBar.classList.toggle("active");
+  menuItems.classList.toggle("active");
+})
