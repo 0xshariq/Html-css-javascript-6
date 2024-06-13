@@ -8,7 +8,7 @@ body{
   background-image: url(bg-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  
+
 }
 
 /* navbar */
@@ -41,6 +41,21 @@ body{
 
 .menu-btn{
   display: inline-block;
+  position: absolute;
+}
+
+.menu-btn i{
+  font-size: 1.5rem;
+  color: #000;
+  background-color: transparent;
+}
+
+.menu-btn i:hover{
+  color: #fff;
+}
+
+menu-btn li{
+  font-size: 1.6rem;
 }
 
 .menu-bar.active {
@@ -83,7 +98,7 @@ body{
   height: auto;
   background-color: #0CF574;
   border-radius: 5px;
-  
+
 }
 
 .accordion-title {
@@ -132,4 +147,3 @@ footer div.p2{
   justify-content: center;
   margin-bottom: 10px;
   font-size: 1.2rem;
-}
